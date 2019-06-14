@@ -76,6 +76,8 @@ public class UIManager : MonoBehaviour
             titleScreen.SetActive(false);
             gameOverText.enabled = false;
             scoreText.enabled = true;
+            Score = 0;
+            scoreText.text = "Score: " + Score;
             finalScore.enabled = false;
             PauseButton.SetActive(true);
             _gameManager.timerText.enabled = true;
